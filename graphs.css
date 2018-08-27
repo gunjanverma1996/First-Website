@@ -162,19 +162,12 @@
 .main-screen{
 	background-color: #EBEFF2;
 	padding: 30px;
-	position: fixed;
-    height: 100vh;
-    overflow-y: scroll;
-    margin: 0px 0px 0px 225px;
 }
 .side-navbar{
 	background-color: #FFFFFF;
 	text-align: center;
 	padding: 30px;
 	font-size: 1.5rem;
-	position: fixed;
-    height: 100vh;
-    overflow-y: scroll;
 }
 .logo a:hover{
 	color: #188AE2;
@@ -244,7 +237,7 @@
 	font-size: 13px;
 }
 .progress{
-	width: 14rem;
+	width: 12rem;
     background-color: #ceffd5;
     height: 0.4rem;
     margin-top: -1.5rem;
@@ -265,7 +258,7 @@
     font-size: 12px;
     padding: 3px 8px;
     border-radius: 24px;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 .arrowup{
 	margin: 0.2rem;
@@ -280,7 +273,7 @@
     font-size: 12px;
     padding: 3px 8px;
     border-radius: 24px;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 .dailysales-percentage:hover{
 	color: white;
@@ -359,7 +352,7 @@
 	margin-top: 0.5rem;
 }
 .fifth-section-row{
-	margin-top: 0.5rem;
+	margin-top: 1rem;
 }
 .fifth-section1{
 	background-color: white;
@@ -426,7 +419,7 @@
 	text-decoration: none;
 }
 .font-14{
-	font-size: 14px;
+	font-size: 13px;
 }
 .table td{
 	border-top:none !important;
@@ -522,4 +515,7 @@
 	text-align: start;
     padding: 0px 0px 0px 43px;
     list-style-type: none;
+}
+.btn:focus{
+	box-shadow: none;
 }
