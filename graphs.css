@@ -26,13 +26,52 @@
     	margin: 2rem !important;
     }
     .progress{
-    	width: 23rem !important;
+    	width: 26rem !important;
     }
 }
 
 @media (max-width: 768px){
 	.logo{
-		display: none;
+		display: block;
+		padding-top: 23px;
+	}
+	.logo1{
+		color: white;
+	}
+	.fifth-section2{
+		margin-top: 0.5rem !important;
+	}
+	.fifth-section-row{
+		margin-top: 0.5rem !important;
+	}
+	.fourth-section{
+		margin-top: 0.5rem !important;
+	}
+	.mat-helme{
+		color: white !important;
+		font-weight: none !important;
+		font-size: 15px !important;
+	}
+	.side-nav-close{
+		position: absolute;
+		top: -1rem;
+		right: 6px;
+		width: 35px;
+		height: 35px;
+		cursor: pointer;
+		z-index: 1;
+		border-radius: 50%;
+		font-size: 3rem;
+    	color: wheat;
+	}
+	.green{
+		color: white !important;
+	}
+	.avatar-image {
+		display: block !important;
+		width: 35% !important;
+		margin-top: 11%;
+    	margin-left: 33%;
 	}
 	.section1{
 		margin-bottom: 0px;
@@ -100,6 +139,30 @@
 		height: 100vh !important;
 		width: 100vw !important;
 		overflow-y: scroll !important;
+	}
+	.resp-side-nav{
+		background-color: rgba(0, 0, 0, 0.85)  !important;
+    	position: absolute;
+    	z-index: 1;
+    	display: block;
+   		top: 0;
+    	left: 0;
+    	color: black;
+    	width: 60% !important;
+	}
+	.resp-navi{
+		color: white !important;
+    	margin-left: 2.3rem !important;
+    	font-size: 17px !important;
+	}
+	.resp-listing{
+		padding: 0px 0px 0px 28% !important;
+	}
+	.whitecolor{
+		color: white !important;
+	}
+	.icon-white{
+		color: white !important;
 	}
 	
 }
@@ -307,17 +370,14 @@
 .bar-graph{
 	background-color: #fff;
 	border-radius: 4%;
-	margin-top: 1rem;
 }
 .doughnut-graph{
 	background-color: #fff;
 	border-radius: 4%;
-	margin-top: 1rem;
 }
 .line-graph{
 	background-color: #fff;
 	border-radius: 3%;
-	margin-top: 1rem;
 }
 .bar-graph-section1{
 	padding: 1rem;
@@ -330,9 +390,6 @@
 }
 .third-section{
 	margin-top: 1rem;
-}
-.fourth-section{
-	margin-top: 0.5rem;
 }
 .fourth-section1{
 	background-color: #fff;
@@ -376,11 +433,8 @@
 	border-radius: 3%;
 	margin-top: 0.5rem;
 }
-.fourth-section1{
-	margin-top: 0.5rem;
-}
 .fifth-section-row{
-	margin-top: 1rem;
+	margin-top: 0.5rem !important;
 }
 .fifth-section1{
 	background-color: white;
@@ -429,7 +483,7 @@
 .fifth-section2{
 	background-color: white;
 	border-radius: 3%;
-	margin-top: 1rem;
+	margin-top: 0.5rem !important;
 }
 .latest-projects{
 	padding: 1.3rem 1.3rem;
@@ -448,7 +502,7 @@
 	text-decoration: none;
 }
 .font-14{
-	font-size: 13px;
+	font-size: 14px;
 }
 .table td{
 	border-top:none !important;

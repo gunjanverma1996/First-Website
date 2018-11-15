@@ -34,7 +34,7 @@ let doughnutChart = new Chart(myDoughnut,{
 		datasets:[{
 			label:'Population',
 			data:[45,80,20],
-			backgroundColor:['#126DB3','#672259','#139268'],
+			backgroundColor:['#F9B763','#FF5B5B','#3CA38B'],
 			BorderWidth:3,
 			borderColor : '#fff'
 		}]

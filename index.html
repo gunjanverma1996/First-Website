@@ -8,9 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     
     <link rel="stylesheet" type="text/css" href="graphs.css">
     <link rel="shortcut icon" href="images/graph_image/user.png" type="image/png">
+    
+   
 
     <title>Adminto</title>
   </head>
@@ -18,57 +21,58 @@
     <div class="mainsection">
       <div class="screen">
         <div class="row m-0">
-          <div class="col-md-2 side-navbar d-none d-md-block d-lg-block">
+          <div id="side-nav" class="col-md-2 side-navbar d-none d-md-block d-lg-block">
             <div class="margin-5">
-              <div class="logo">
+              <div class="logo ">
                <a href="#" class="logo1">Admin<span class="green">to</span></a>
+               <a href="#" class="side-nav-close d-md-none" onclick="closeNav()">+</a>
               </div>
               <div class="image">
                 <img src="images/graph_image/avatar-1.jpg" class="avatar-image img-fluid">
               </div>
-              <div class="row content-justify d-none d-md-block d-lg-block">
+              <div class="row content-justify d-md-block d-lg-block">
               <div class="name"><h6 class="mat-helme">Mat Helme</h6></div>
               </div>
-              <div class="row content-justify d-none d-md-block d-lg-block">
+              <div class="row content-justify d-md-block d-lg-block">
                 <div class="settings">
-                  <img src="images/graph_image/settings.png" class="settings-image img-fluid" alt="settings">
-                  <img src="images/graph_image/power.png" class="power img-fluid" alt="power">
+                  <i class="fas fa-power-off settings-image img-fluid icon-white color-gray font-14" alt="settings"></i>
+                  <i class="fas fa-cogs power img-fluid icon-white color-gray font-14" alt="power"></i>
                 </div>
               </div>
               <div id="sidebar-menu">
-               <div class="navigation d-none d-md-block d-lg-block">
+               <div class="navigation d-md-block d-lg-block">
                  <div class="row">
-                   <span class="text-muted font-14">Navigation</span>
+                   <span class="text-muted font-14 resp-navi">Navigation</span>
                  </div>
                </div>
-               <ul class="d-none d-md-block d-lg-block font-14 listing gray">
+               <ul class="d-md-block d-lg-block font-14 listing gray">
                  <li class="row pb-3">
-                  <div class="col-md-3 p-0">
-                    <img src="images/graph_image/dashboard.png" class="width-13">
+                  <div class="col-md-3 col-3 p-0">
+                    <i class="fas fa-th-large width-13 icon-white"></i>
                   </div>
-                  <div class="col-md-9 p-0 dashboard">
-                    <span class="font-14 cornflowerblue">Dashboard</span>
-                  </div>
-                </li>
-                <li class="row pb-2">
-                  <div class="col-md-3 p-0">
-                    <img src="images/graph_image/icon.png" class="width-13">
-                  </div>
-                  <div class="col-md-9 p-0 dashboard">
-                    <span class="font-14 cornflowerblue">Typography</span>
+                  <div class="col-md-9 col-9 p-0 dashboard">
+                    <span class="font-14 cornflowerblue whitecolor">Dashboard</span>
                   </div>
                 </li>
-                <li class="row">
+                <li class="row pb-3">
+                  <div class="col-md-3 col-3 p-0">
+                    <i class="far fa-edit width-13 icon-white"></i>
+                  </div>
+                  <div class="col-md-9 col-9 p-0 dashboard">
+                    <span class="font-14 cornflowerblue whitecolor">Typography</span>
+                  </div>
+                </li>
+                <li class="row m-0 pb-3">
                   <div id="accordion">
-                     <a data-toggle="collapse" href="#user-iterface" class="btn merge" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                     <a data-toggle="collapse" href="#user-iterface" class="btn merge p-0" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
                       <div class="row">
-                        <div class="col-md-3 col-3 p-0"><img src="images/graph_image/invert.png"></div>
-                        <div class="col-md-6 col-6 p-0 font-14 left-align mt-1 color-gray cornflowerblue">User Interface</div>
+                        <div class="col-md-3 col-3 p-0"><i class="fas fa-adjust icon-white color-gray"></i></div>
+                        <div class="col-md-6 col-6 p-0 font-14 left-align mt-1 color-gray cornflowerblue whitecolor">User Interface</div>
                         <div class="col-md-3 col-3 p-0">
-                          <img src="images/graph_image/right-arrow.png" class="width-9 mt-1"></div>
+                          <i class="fas fa-angle-right width-9 mt-2 color-gray icon-white"></div></i>
                         </div>
                       </a>
-                     <ul id="user-iterface" class="collapse sidenavbar-listing" data-parent="#accordion" aria-labelledby="dropdownMenuButton">
+                     <ul id="user-iterface" class="collapse sidenavbar-listing resp-listing whitecolor" data-parent="#accordion" aria-labelledby="dropdownMenuButton">
                        <li href="#" class="pb-2 pt-1">Buttons</li>
                        <li href="#" class="pb-2">Cards</li>
                        <li href="#" class="pb-2">Dragable Cards</li>
@@ -87,17 +91,17 @@
                       </ul>
                   </div>
                 </li>
-                <li class="row">
+                <li class="row m-0 pb-3">
                   <div id="accordion">
-                     <a data-toggle="collapse" href="#Forms" class="btn merge" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                     <a data-toggle="collapse" href="#Forms" class="btn merge p-0" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
                       <div class="row">
-                        <div class="col-md-3 col-3 p-0"><img src="images/graph_image/lines.png"></div>
-                        <div class="col-md-6 col-6 p-0 font-14 left-align mt-1 color-gray cornflowerblue">Forms</div>
+                        <div class="col-md-3 col-3 p-0"><i class="fab fa-wpforms icon-white color-gray"></i></div>
+                        <div class="col-md-6 col-6 p-0 font-14 left-align mt-1 color-gray cornflowerblue whitecolor">Forms</div>
                         <div class="col-md-3 col-3 p-0">
-                          <img src="images/graph_image/right-arrow.png" class="width-9 mt-1"></div>
+                          <i class="fas fa-angle-right width-9 mt-2 color-gray icon-white"></div></i>
                         </div>
                       </a>                    
-                     <ul id="Forms" class="collapse sidenavbar-listing" data-parent="#accordion" aria-labelledby="dropdownMenuButton">
+                     <ul id="Forms" class="collapse sidenavbar-listing resp-listing whitecolor" data-parent="#accordion" aria-labelledby="dropdownMenuButton">
                        <li href="#" class="pb-2 pt-1">General Elements</li>
                        <li href="#" class="pb-2">Advanced Form</li>
                        <li href="#" class="pb-2">Form Validation</li>
@@ -108,17 +112,17 @@
                      </ul>
                    </div>
                 </li>
-                 <li class="row">
+                 <li class="row m-0 pb-3">
                   <div id="accordion">
-                     <a data-toggle="collapse" href="#Tables" class="btn merge" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                     <a data-toggle="collapse" href="#Tables" class="btn merge p-0" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
                       <div class="row">
-                        <div class="col-md-3 col-3 p-0"><img src="images/graph_image/view-list-button.png"></div>
-                        <div class="col-md-6 col-6 p-0 font-14 left-align mt-1 color-gray cornflowerblue">Tables</div>
+                        <div class="col-md-3 col-3 p-0"><i class="fas fa-align-justify icon-white color-gray"></i></div>
+                        <div class="col-md-6 col-6 p-0 font-14 left-align mt-1 color-gray cornflowerblue whitecolor">Tables</div>
                         <div class="col-md-3 col-3 p-0">
-                          <img src="images/graph_image/right-arrow.png" class="width-9 mt-1"></div>
+                          <i class="fas fa-angle-right width-9 mt-2 color-gray icon-white"></div></i>
                         </div>
                       </a>                    
-                     <ul id="Tables" class="collapse sidenavbar-listing" data-parent="#accordion" aria-labelledby="dropdownMenuButton">
+                     <ul id="Tables" class="collapse sidenavbar-listing resp-listing whitecolor" data-parent="#accordion" aria-labelledby="dropdownMenuButton">
                        <li href="#" class="pb-2 pt-1">Basic Tables</li>
                        <li href="#" class="pb-2">Data Table</li>
                        <li href="#" class="pb-2">Responsive Table</li>
@@ -127,17 +131,17 @@
                      </ul>
                    </div>
                   </li>
-                <li class="row pb-2">
+                <li class="row pb-3 m-0">
                   <div id="accordion">
-                     <a data-toggle="collapse" href="#charts" class="btn merge" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                     <a data-toggle="collapse" href="#charts" class="btn merge p-0" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
                       <div class="row">
-                        <div class="col-md-3 col-3 p-0"><img src="images/graph_image/business-circular-pie-chart.png"></div>
-                        <div class="col-md-6 col-6 p-0 font-14 left-align mt-1 color-gray cornflowerblue">Charts</div>
+                        <div class="col-md-3 col-3 p-0"><i class="fas fa-chart-pie icon-white color-gray"></i></div>
+                        <div class="col-md-6 col-6 p-0 font-14 left-align mt-1 color-gray cornflowerblue whitecolor">Charts</div>
                         <div class="col-md-3 col-3 p-0">
-                          <img src="images/graph_image/right-arrow.png" class="width-9 mt-1"></div>
+                          <i class="fas fa-angle-right width-9 mt-2 color-gray icon-white"></div></i>
                         </div>
                       </a>
-                     <ul id="charts" class="collapse sidenavbar-listing" data-parent="#accordion" aria-labelledby="dropdownMenuButton">
+                     <ul id="charts" class="collapse sidenavbar-listing resp-listing whitecolor" data-parent="#accordion" aria-labelledby="dropdownMenuButton">
                        <li href="#" class="pb-2 pt-1">Flot Chart</li>
                        <li href="#" class="pb-2">Morris Chart</li>
                        <li href="#" class="pb-2">Chartlist Charts</li>
@@ -147,35 +151,32 @@
                   </div>
                 </li>          
                 <li class="row pb-3">
-                  <div class="col-md-3 p-0">
-                    <img src="images/graph_image/calendar-with-a-clock-time-tools.png" class="width-13">
+                  <div class="col-md-3 col-3 p-0">
+                    <i class="far fa-calendar-alt width-13 icon-white"></i>
                   </div>
-                  <div class="col-md-9 p-0 dashboard">
-                    <span class="font-14 cornflowerblue">Calender</span>
-                  </div>
-                </li>
-                <li class="row pb-1">
-                  <div class="col-md-3 p-0">
-                    <img src="images/graph_image/envelope.png" class="width-13">
-                  </div>
-                  <div class="col-md-6 p-0 dashboard">
-                    <span class="font-14 cornflowerblue">Mail</span>
-                  </div>
-                  <div class="col-md-3 p-0">
-                    <img src="images/graph_image/right-arrow.png" class="width-9">
+                  <div class="col-md-9 col-9 p-0 dashboard">
+                    <span class="font-14 cornflowerblue whitecolor">Calender</span>
                   </div>
                 </li>
-                <li class="row">
+                <li class="row pb-3">
+                  <div class="col-md-3 col-3 p-0">
+                    <i class="fas fa-envelope width-13 icon-white"></i>
+                  </div>
+                  <div class="col-md-9 col-9 p-0 dashboard">
+                    <span class="font-14 cornflowerblue whitecolor">Mail</span>
+                  </div>
+                </li>
+                <li class="row m-0 pb-3">
                  <!--  <div id="accordion"> -->
-                      <a class="btn merge" data-toggle="collapse" href="#pages">
+                      <a class="btn merge p-0" data-toggle="collapse" href="#pages">
                       <div class="row">
-                        <div class="col-md-3 col-3 p-0"><img src="images/graph_image/pages-of-google-plus.png"></div>
-                        <div class="col-md-6 col-6 p-0 font-14 left-align mt-1 color-gray cornflowerblue">Pages</div>
+                        <div class="col-md-3 col-3 p-0"><i class="far fa-file-alt icon-white color-gray"></i></div>
+                        <div class="col-md-6 col-6 p-0 font-14 left-align mt-1 color-gray cornflowerblue whitecolor">Pages</div>
                         <div class="col-md-3 col-3 p-0">
-                          <img src="images/graph_image/right-arrow.png" class="width-9 mt-1"></div>
+                          <i class="fas fa-angle-right width-9 mt-2 color-gray icon-white"></div></i>
                         </div>
                       </a>
-                     <ul id="pages" class="collapse sidenavbar-listing" data-parent="#accordion">
+                     <ul id="pages" class="collapse sidenavbar-listing resp-listing whitecolor" data-parent="#accordion">
                        <li href="#" class="pb-2 pt-1">Starter Page</li>
                        <li href="#" class="pb-2">Login</li>
                        <li href="#" class="pb-2">Register</li>
@@ -187,17 +188,17 @@
                     </ul>
                  <!--  </div> -->
                 </li>
-                <li class="row">
+                <li class="row m-0 pb-3">
                  <!--  <div id="accordion"> -->
-                      <a class="btn merge" data-toggle="collapse" href="#extra-pages">
+                      <a class="btn merge p-0" data-toggle="collapse" href="#extra-pages">
                       <div class="row">
-                        <div class="col-md-3 col-3 p-0"><img src="images/graph_image/layers (1).png"></div>
-                        <div class="col-md-6 col-6 p-0 font-14 left-align mt-1 color-gray cornflowerblue">Extra Pages</div>
+                        <div class="col-md-3 col-3 p-0"><i class="fas fa-layer-group icon-white color-gray"></i></div>
+                        <div class="col-md-6 col-6 p-0 font-14 left-align mt-1 color-gray cornflowerblue whitecolor">Extra Pages</div>
                         <div class="col-md-3 col-3 p-0">
-                          <img src="images/graph_image/right-arrow.png" class="width-9 mt-1"></div>
+                          <i class="fas fa-angle-right width-9 mt-2 color-gray icon-white"></div></i>
                         </div>
                       </a>
-                     <ul id="extra-pages" class="collapse sidenavbar-listing" data-parent="#accordion">
+                     <ul id="extra-pages" class="collapse sidenavbar-listing resp-listing whitecolor" data-parent="#accordion">
                        <li href="#" class="pb-2 pt-1">Project</li>
                        <li href="#" class="pb-2">Tour</li>
                        <li href="#" class="pb-2">Taskboard</li>
@@ -230,8 +231,8 @@
             <div class="margin-10">
               <div class="row ">
                 <div class="col-2 d-md-none">
-                  <div class="menu-icon">
-                   <img src="images/graph_image/menu.png" alt="menu"> 
+                  <div class="menu-icon"  id="side-menu-icon">
+                   <img onclick="openNav()" src="images/graph_image/menu.png" alt="menu"> 
                   </div>
                 </div>
                 <div class="col-md-12 col-10">
@@ -260,7 +261,7 @@
                   </div>
                 </div>
               </div>
-              <div class="second-section">
+              <div class="second-section" onclick="closeNav()">
                 <div class="row">
                   <div class="col-xl-3 col-md-6 col-12">
                     <div class="section1">
@@ -354,7 +355,7 @@
                   </div>
                 </div>
               </div>
-              <div class="third-section">
+              <div class="third-section" onclick="closeNav()">
                 <div class="container-fluid m-0 p-0">
                   <div class="row">
                     <div class="col-xl-4 col-md-12 col-12">
@@ -403,7 +404,7 @@
                 </div>
               </div>
 
-              <div class="fourth-section">
+              <div class="fourth-section" onclick="closeNav()">
                 <div class="container-fluid m-0 p-0">
                   <div class="fourth-section-row">
                     <div class="row">
@@ -508,7 +509,7 @@
                 </div>
               </div>
 
-              <div class="fifth-section">
+              <div class="fifth-section" onclick="closeNav()">
                 <div class="container-fluid m-0 p-0">
                   <div class="fifth-section-row">
                     <div class="row">
@@ -729,7 +730,22 @@
         </div>
       </div>
     </div>
-
+    <script type="text/javascript">
+      function openNav(){
+        var x = document.getElementById("side-nav");
+        x.classList.remove("d-none");
+        x.classList.add("resp-side-nav");
+        x.classList.add("logo, logo1, side-nav-close");
+        x.classList.add("resp-listing");
+        x.classList.add("whitecolor");
+        x.classList.add("icon-white");
+        x.classList.remove("color-gray");
+      }
+      function closeNav(){
+        var y = document.getElementById("side-nav");
+        y.classList.add("d-none");
+      }
+    </script>
 
 
 
