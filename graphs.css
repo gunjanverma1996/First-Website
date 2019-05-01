@@ -28,6 +28,12 @@
     .progress{
     	width: 26rem !important;
     }
+    .fifth-section2{
+    	margin-top: 0.5rem !important;
+    }
+    .progress{
+    	width: 22.5rem !important;
+    }
 }
 
 @media (max-width: 768px){
@@ -394,6 +400,7 @@
 .fourth-section1{
 	background-color: #fff;
 	border-radius: 3%;
+	margin-top: 0.5rem;
 }
 .avatar-2-img{
 	border-radius: 50%;
@@ -483,7 +490,6 @@
 .fifth-section2{
 	background-color: white;
 	border-radius: 3%;
-	margin-top: 0.5rem !important;
 }
 .latest-projects{
 	padding: 1.3rem 1.3rem;
